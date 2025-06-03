@@ -4,10 +4,17 @@
     <v-app-bar app color="deep-purple accent-4" dark elevation="4">
       <v-toolbar-title class="d-flex align-center">
         <!-- Imagen con relación de aspecto fija -->
-        <v-avatar class="mr-2" size="250" tile>
-          <v-img src="@/assets/2.png" max-height="80" max-width="210" :aspect-ratio="2" contain class="mr-2"></v-img>
+        <v-avatar class="mr-2" tile>
+          <v-img src="@/assets/favicon.png" contain></v-img>
         </v-avatar>
+
+        <span>
+          <a class="text-h6 font-weight-medium text-decoration-none text-white" href="https://www.talentmarketcuba.com/" target="_blank">
+            Tienda Talentos
+          </a>
+        </span><br />
       </v-toolbar-title>
+
 
       <v-spacer></v-spacer>
 
@@ -162,7 +169,7 @@
                     {{ product.description }}
                   </div>
                 </v-card-text>
-                <v-card-actions>                  
+                <v-card-actions>
                   <v-btn color="success" icon variant="flat" size="small" :href="whatsappLink(product)" target="_blank"
                     class="whatsapp-btn" style="position: absolute; bottom: 8px; right: 8px;">
                     <v-icon>mdi-whatsapp</v-icon>
@@ -660,12 +667,12 @@ export default {
   },
   computed: {
     categories() {
-  const all = ['Todos'];
-  const uniqueSet = new Set(this.products.map(p => p.category));
-  const uniqueArray = Array.from(uniqueSet);
-  const additionalCategories = []
-  return all.concat(uniqueArray, additionalCategories);
-},
+      const all = ['Todos'];
+      const uniqueSet = new Set(this.products.map(p => p.category));
+      const uniqueArray = Array.from(uniqueSet);
+      const additionalCategories = []
+      return all.concat(uniqueArray, additionalCategories);
+    },
     filteredProducts() {
       if (this.selectedCategory === 'Todos') return this.products;
       return this.products.filter(p => p.category === this.selectedCategory);
