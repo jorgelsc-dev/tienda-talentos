@@ -176,7 +176,7 @@
     </v-main>
     <v-footer app color="deep-purple accent-4" dark>
       <v-container class="text-center">
-        <span>&copy; 2025 CoolShop - Todos los derechos reservados</span>
+        <span>&copy; 2025 Tienda Talentos - Todos los derechos reservados</span>
       </v-container>
     </v-footer>
     <v-btn icon large color="success" class="whatsapp-fab"
