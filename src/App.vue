@@ -1,25 +1,41 @@
 <template>
   <v-app>
     <!-- App Bar -->
-    <v-app-bar app color="deep-purple accent-4" dark elevation="4">
-      <v-toolbar-title class="d-flex align-center">
-        <!-- Imagen con relación de aspecto fija -->
-        <v-avatar class="mr-2" tile>
-          <v-img src="@/assets/favicon.png" contain></v-img>
-        </v-avatar>
+    <v-app-bar
+  app
+  dark
+  elevation="4"
+  style="background: linear-gradient(to right, #fdfcfe, #c201d3);"
+>
+  <v-toolbar-title class="d-flex align-center">
+    <v-avatar
+      class="mr-2"
+      tile>
+      <v-img
+        src="@/assets/favicon.png"
+        contain
+        style="border-radius: 12px;"
+      ></v-img>
+    </v-avatar>
 
-        <span>
-          <a class="text-h6 font-weight-medium text-decoration-none text-white" href="https://www.talentmarketcuba.com/" target="_blank">
-            Tienda Talentos
-          </a>
-        </span><br />
-      </v-toolbar-title>
+    <span>
+      <a
+        class="font-weight-medium text-decoration-none"
+        href="https://www.talentmarketcuba.com/"
+        target="_blank"
+      >
+        Tienda Talentos
+      </a>
+    </span><br />
+  </v-toolbar-title>
 
+  <v-spacer></v-spacer>
 
-      <v-spacer></v-spacer>
+  <v-btn href="https://wa.me/+5356605092?text=Info" icon>
+    <v-icon class="text-white">mdi-whatsapp</v-icon>
+  </v-btn>
+</v-app-bar>
 
-      <v-btn href="https://wa.me/+5356605092?text=Info" icon><v-icon>mdi-whatsapp</v-icon></v-btn>
-    </v-app-bar>
 
     <!-- Main Content -->
     <v-main>
