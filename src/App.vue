@@ -197,7 +197,7 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-footer app color="blue" dark>
+    <v-footer app color="#c201d3" dark>
       <v-container class="text-center">
         <span>&copy; 2025 Tienda Talentos - Todos los derechos reservados</span>
       </v-container>
