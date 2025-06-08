@@ -5,7 +5,7 @@
   app
   dark
   elevation="4"
-  style="background: linear-gradient(to right, #eaacf0, #c201d3);"
+  style="background: linear-gradient(to right, #ffcdd0, #9c19bd);"
 >
   <v-toolbar-title class="d-flex align-center">
     <v-avatar
@@ -197,7 +197,7 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-footer app color="#c201d3" dark>
+    <v-footer app color="#9c19bd" dark>
       <v-container class="text-center">
         <span>&copy; 2025 Tienda Talentos - Todos los derechos reservados</span>
       </v-container>
